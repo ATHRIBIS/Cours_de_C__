@@ -1,0 +1,81 @@
+
+
+ ======================================
+Log system init well at : 1607183398
+Starting logging ...
+
+======================================
+Log system init well at : 1607183421
+Starting logging ...
+
+======================================
+Log system init well at : 1607202386
+Starting logging ...[1607202386][ALERT]:[level1] - Set path : done.
+[1607202386][ALERT]:[level0] - Trying to open the score stream.
+[1607202386][ALERT]:[level1] - Stream opend with succes.
+[1607202386][ALERT]:[level0] - Var init !.
+[1607202393][ALERT]:[level0] - The user supposed to enter its value : nomUtilisateur - stream cin.
+[1607202397][ALERT]:[level0] - cin.ignore();.
+[1607202397][ALERT]:[level0] - The user supposed to enter its value : scoreUtilisateur - stream cin.
+[1607202397][ALERT]:[level1] - App shows in scoreStreamOut stream a text.
+
+
+======================================
+Log system init well at : 1607202439
+Starting logging ...[1607202439][ALERT]:[level1] - Set path : done.
+[1607202439][ALERT]:[level0] - Trying to open the score stream.
+[1607202439][ALERT]:[level1] - Stream opend with succes ! 
+.
+[1607202439][ALERT]:[level0] - Var init !.
+[1607202445][ALERT]:[level0] - The user supposed to enter its value : nomUtilisateur - stream cin.
+[1607202448][ALERT]:[level0] - cin.ignore();.
+[1607202448][ALERT]:[level0] - The user supposed to enter its value : scoreUtilisateur - stream cin.
+[1607202448][ALERT]:[level1] - App shows in scoreStreamOut stream a text.
+
+
+======================================
+Log system init well at : 1607202494
+Starting logging ...
+[1607202494][ALERT]:[level1] - Set path : done.
+[1607202494][ALERT]:[level0] - Trying to open the score stream.
+[1607202494][ALERT]:[level1] - Stream opend with succes !.
+[1607202494][ALERT]:[level0] - Var init !.
+[1607202498][ALERT]:[level0] - The user supposed to enter its value : nomUtilisateur - stream cin.
+[1607202500][ALERT]:[level0] - cin.ignore();.
+[1607202500][ALERT]:[level0] - The user supposed to enter its value : scoreUtilisateur - stream cin.
+[1607202500][ALERT]:[level1] - App shows in scoreStreamOut stream a text.
+
+
+======================================
+Log system init well at : 1607243140
+Starting logging ...
+[1607243140][ALERT]:[level1] - Set path : done.
+[1607243140][ALERT]:[level0] - Trying to open the score stream.
+[1607243140][ALERT]:[level1] - Stream opend with succes !.
+[1607243140][ALERT]:[level0] - Var init !.
+[1607243144][ALERT]:[level0] - The user supposed to enter its value : nomUtilisateur - stream cin.
+[1607243146][ALERT]:[level0] - cin.ignore();.
+[1607243146][ALERT]:[level0] - The user supposed to enter its value : scoreUtilisateur - stream cin.
+[1607243146][ALERT]:[level1] - App shows in scoreStreamOut stream a text.
+
+
+======================================
+Log system init well at : 1607243233
+Starting logging ...
+[1607243233][ALERT]:[level1] - Set path : done.
+[1607243233][ALERT]:[level0] - Trying to open the score stream.
+[1607243233][ALERT]:[level1] - Stream opend with succes !.
+[1607243233][ALERT]:[level0] - Var init !.
+[1607243236][ALERT]:[level0] - The user supposed to enter its value : nomUtilisateur - stream cin.
+[1607243238][ALERT]:[level0] - cin.ignore();.
+[1607243238][ALERT]:[level0] - The user supposed to enter its value : scoreUtilisateur - stream cin.
+[1607243238][ALERT]:[level1] - App shows in scoreStreamOut stream a text.
+
+
+======================================
+Log system init well at : 1607246061
+Starting logging ...
+[1607246061][ALERT]:[level1] - Set path : done.
+[1607246061][ALERT]:[level0] - Trying to open the score stream.
+[1607246061][ALERT]:[level1] - Stream opend with succes !.
+[1607246061][ALERT]:[level0] - Var init !.
