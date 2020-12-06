@@ -3,6 +3,7 @@ project(Cours)
 
 set(CMAKE_CXX_STANDARD 14)
 add_subdirectory(Tableaux)
+add_subdirectory(Pointeur)
 add_subdirectory(Flux)
 add_subdirectory(TP_2_Mot_mystere)
 
