@@ -2,6 +2,7 @@
 // Created by Aymeric Schaeffer on 06/12/2020.
 //
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -25,12 +26,41 @@ int lesson() {
 
     // Libérer la mémoire
     delete monJoliPointeur; // On libère la case mémoire (supprime la variable)
-    monJoliPointeur = 0; // Pointeur ne pointe plus vers la case mémoire d'avant.
+    monJoliPointeur = nullptr; // Pointeur ne pointe plus vers la case mémoire d'avant.
     return 0;
+}
+void jeuQuestions() {
+    // Choisir parmi plusieurs variable
+    string reponseA, reponseB, reponseC;
+    reponseA = "La peur de la loterie";
+    reponseB = "la peur du noir";
+    reponseC = "La peur des vendredis 13";
+    cout << "Qu'est ce que la 'kenophobie' ?" << endl
+    << "A) " << reponseA << endl
+    << "B) " << reponseB << endl
+    << "C) " << reponseC << endl;
 
+    char reponse;
+    cout << "Quelle est votre reponse ? \n/> ";
+    cin >> reponse;
+
+    string *reponseUtilisateur(nullptr);
+    switch (reponse) {
+        case 'A':
+            reponseUtilisateur = &reponseA;
+            break;
+        case 'B':
+            reponseUtilisateur = &reponseB;
+            break;
+        case 'C':
+            reponseUtilisateur = &reponseC;
+            break;
+    }
+    cout << "Vous avez choisis la réponse : " << *reponseUtilisateur << endl;
 }
 
 int main() {
     lesson();
+    jeuQuestions();
     return 0;
 }
