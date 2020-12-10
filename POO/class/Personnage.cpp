@@ -10,6 +10,13 @@
 #include "Personnage.h"
 #include <string>
 using namespace std;
+Personnage::Personnage() {
+    m_vie = 100;
+    m_mana = 100;
+    m_nomArme = "Épée rouillée";
+    m_degatsArme = 10;
+}
+// Les attributs sont donnés au constructeur dans le fichier source
 
 void Personnage::recevoirDegats(int nbDegats) {
     m_vie -= nbDegats; // On enlève le nombre de dégats reçus

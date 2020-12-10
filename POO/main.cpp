@@ -14,7 +14,7 @@
 using namespace std;
 int main() {
     // Nouveau constructeur
-    // Ici le constructeur
+    Personnage david, goliath;
 
     goliath.attaquer(david);
     david.boirePotionDeVie(20);

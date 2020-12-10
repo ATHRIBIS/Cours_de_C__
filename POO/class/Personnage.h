@@ -5,8 +5,9 @@
  * - NOTRE FICHIER HEADER
  * - PROTOYPE DE NOTRE CLASSE
  *
- * -- METHODES  DEFINIS DANS FICHIER SOURCE
- * -- ATTRIBUTS INITLISÉS DANS ???
+ * -- METHODES DEFINIS DANS FICHIER SOURCE
+ * -- ATTRIBUTS INITLISÉS DANS FICHIER SOURCE
+ * -- CONSTRUCTEUR INITIALISÉ DANS HEADER
  */
 #ifndef COURS_PERSONNAGE_H
 #define COURS_PERSONNAGE_H
@@ -18,6 +19,11 @@
 
 class Personnage {
 public:
+    Personnage(); // Constructeur
+    /*
+     * Le constructeur est une méthode qui n'a pas de type (pas de void etc)
+     * Il a le même nom que sa classe
+     */
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
     void boirePotionDeVie(int quantitePotion);
