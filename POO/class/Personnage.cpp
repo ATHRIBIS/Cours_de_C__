@@ -10,15 +10,12 @@
 #include "Personnage.h"
 #include <string>
 using namespace std;
-Personnage::Personnage() {
-    m_vie = 100;
-    m_mana = 100;
-    m_nomArme = "Épée rouillée";
-    m_degatsArme = 10;
+Personnage::Personnage() : m_vie(100), m_degatsArme(10), m_mana(100), m_nomArme("Épée rouillée") {
+    // Le corps du constructeur est vide !!!!
 }
 // Les attributs sont donnés au constructeur dans le fichier source
 /*
- * INITIALISATION CLASSIQUE
+ * LIST D'INITIALISATION // AUTRE MOYEN D'INITIALISER
  */
 
 void Personnage::recevoirDegats(int nbDegats) {
