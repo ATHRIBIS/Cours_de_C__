@@ -10,9 +10,10 @@
 #include "Personnage.h"
 #include <string>
 using namespace std;
-Personnage::Personnage() : m_vie(100), m_mana(100), m_nomArme("Épée rouillée"), m_degatsArme(10) {
+Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_nomArme("Épée rouillée"), m_degatsArme(10) {
 
-}
+} // AVEC SURCHARGE
+
 // Les attributs sont donnés au constructeur dans le fichier source
 
 void Personnage::recevoirDegats(int nbDegats) {
@@ -46,3 +47,6 @@ bool Personnage::estVivant() {
     }
 }
 
+string Personnage::quelleArme() {
+    return m_nomArme;
+}

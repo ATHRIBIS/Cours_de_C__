@@ -19,8 +19,9 @@
 
 class Personnage {
 public:
-    Personnage(); // Constructeur
+    Personnage(std::string nomArme, int degatsArme); // Constructeur surchargé
     /*
+     * SURCHARGE : Mettre des params au constructeur
      * Le constructeur est une méthode qui n'a pas de type (pas de void etc)
      * Il a le même nom que sa classe
      */
@@ -29,6 +30,7 @@ public:
     void boirePotionDeVie(int quantitePotion);
     void changerArme(std::string nomNouvelleArme, int degatsNouvelleArme);
     bool estVivant();
+    std::string quelleArme();
 
 private:
     int m_vie;
