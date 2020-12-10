@@ -13,11 +13,8 @@
 #include "class/Personnage.h"
 using namespace std;
 int main() {
-    Personnage david, goliath; // Création de deux objets avec un constructeur automatique
-    /*
-     * Ici est appelé un constructeur automatiquement géneré par le compilateur
-     * Pour initialiser des attributs, on utilise son propre constructeur. Ce n'est pas le cas ici
-     */
+    // Nouveau constructeur
+
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
     goliath.attaquer(david);
