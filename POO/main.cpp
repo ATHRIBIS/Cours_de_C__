@@ -13,6 +13,9 @@ using namespace std;
  * Et passer par des méthodes pour les modifiers
  *
  * On délcare les méthodes en premier, puis les attributs
+ *
+ * POO INCLUS DANS MAIN
+ * PROCHAINE ETAPE : SEPARER LE MAIN
  * -----------------------------------------------------------
  */
 class Personnage{
