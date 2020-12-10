@@ -17,6 +17,13 @@ void Personnage::attaquer(Personnage &cible) { // référence vers un objet de t
     cible.recevoirDegats(m_degatsArme); // On inflige les dégats de l'arme du joueur a la cible (qui recoit les dégats)
 }
 
+void Personnage::boirePotionDeVie(int quantitePotion) {
+    m_vie += quantitePotion;
+    if (m_vie > 100) {
+        m_vie = 100;
+    }
+}
+
 void Personnage::changerArme(std::string nomNouvelleArme, int degatsNouvelleArme) {
     m_nomArme = nomNouvelleArme;
     m_degatsArme = degatsNouvelleArme;
