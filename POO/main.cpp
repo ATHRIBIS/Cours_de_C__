@@ -14,6 +14,7 @@
 using namespace std;
 int main() {
     // Nouveau constructeur
+    // Ici le constructeur
 
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
