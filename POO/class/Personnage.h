@@ -1,7 +1,13 @@
 //
 // Created by Aymeric Schaeffer on 10/12/2020.
 //
-
+/*
+ * - NOTRE FICHIER HEADER
+ * - PROTOYPE DE NOTRE CLASSE
+ *
+ * -- METHODES  DEFINIS DANS FICHIER SOURCE
+ * -- ATTRIBUTS INITLISÉS DANS ???
+ */
 #ifndef COURS_PERSONNAGE_H
 #define COURS_PERSONNAGE_H
 #include <string>

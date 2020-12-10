@@ -1,7 +1,12 @@
 //
 // Created by Aymeric Schaeffer on 10/12/2020.
 //
-
+/*
+ * - NOTRE FICHIER SOURCE CONTENANT LES !METHODES! DE NOTRE CLASS
+ * EX : Personnage::attaquer() {}
+ *
+ * - ON INCLU LE HEADER DE NOTRE CLASS
+ */
 #include "Personnage.h"
 #include <string>
 using namespace std;
