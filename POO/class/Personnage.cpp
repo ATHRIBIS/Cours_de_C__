@@ -17,6 +17,9 @@ Personnage::Personnage() {
     m_degatsArme = 10;
 }
 // Les attributs sont donnés au constructeur dans le fichier source
+/*
+ * INITIALISATION CLASSIQUE
+ */
 
 void Personnage::recevoirDegats(int nbDegats) {
     m_vie -= nbDegats; // On enlève le nombre de dégats reçus
