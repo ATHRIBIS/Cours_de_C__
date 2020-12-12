@@ -14,13 +14,13 @@
 using namespace std;
 int main() {
     // Nouveau constructeur
-    Personnage david("E", 1), goliath("E", 1);
+    Personnage david, goliath("Ehh", 1);
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
     goliath.attaquer(david);
     david.attaquer(goliath);
 
-    goliath.changerArme("Double hache superpuissante grrr", 40);
+//    goliath.changerArme("Double hache superpuissante grrr", 40);
     goliath.attaquer(david);
     cout << david.quelleArme() << "   "<< goliath.quelleArme();
     return 0;

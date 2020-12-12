@@ -9,13 +9,13 @@
  */
 #include "Personnage.h"
 #include <string>
+#include <utility>
 using namespace std;
-Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_nomArme("Épée rouillée"), m_degatsArme(10) {
 
-} // AVEC SURCHARGE
+Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_nomArme(std::move(nomArme)), m_degatsArme(degatsArme) {
 
-// Les attributs sont donnés au constructeur dans le fichier source
-
+}
+// DESTRUCTEUR
 void Personnage::recevoirDegats(int nbDegats) {
     m_vie -= nbDegats; // On enlève le nombre de dégats reçus
     if (m_vie < 0) {
@@ -23,7 +23,7 @@ void Personnage::recevoirDegats(int nbDegats) {
     } // Evite d'avoir une vie négative
 }
 
-void Personnage::attaquer(Personnage &cible) { // référence vers un objet de type Personnage
+void Personnage::attaquer(Personnage &cible) const { // référence vers un objet de type Personnage
     cible.recevoirDegats(m_degatsArme); // On inflige les dégats de l'arme du joueur a la cible (qui recoit les dégats)
 }
 
@@ -35,11 +35,11 @@ void Personnage::boirePotionDeVie(int quantitePotion) {
 }
 
 void Personnage::changerArme(std::string nomNouvelleArme, int degatsNouvelleArme) {
-    m_nomArme = nomNouvelleArme;
+    m_nomArme = std::move(nomNouvelleArme);
     m_degatsArme = degatsNouvelleArme;
 }
 
-bool Personnage::estVivant() {
+bool Personnage::estVivant() const {
     if (m_vie > 0) { // Plus que 0 de vie ?
         return true; // Vivant
     } else {
