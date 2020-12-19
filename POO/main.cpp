@@ -22,6 +22,7 @@ int main() {
 
     goliath.changerArme("Double hache superpuissante grrr", 40);
     goliath.attaquer(david);
-    cout << david.quelleArme() << "   "<< goliath.quelleArme();
+    david.quelleArme();
+    goliath.quelleArme();
     return 0;
 }

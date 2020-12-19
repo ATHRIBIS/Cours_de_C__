@@ -8,9 +8,8 @@
  * - ON INCLU LE HEADER DE NOTRE CLASS
  */
 #include "Personnage.h"
-#include <string>
 using namespace std;
-Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_nomArme("Épée rouillée"), m_degatsArme(10) {
+Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nomArme, degatsArme) {
 
 } // AVEC SURCHARGE
 
@@ -24,7 +23,7 @@ void Personnage::recevoirDegats(int nbDegats) {
 }
 
 void Personnage::attaquer(Personnage &cible) { // référence vers un objet de type Personnage
-    cible.recevoirDegats(m_degatsArme); // On inflige les dégats de l'arme du joueur a la cible (qui recoit les dégats)
+    cible.recevoirDegats(m_arme.getMDegats()); // On inflige les dégats de l'arme du joueur a la cible (qui recoit les dégats)
 }
 
 void Personnage::boirePotionDeVie(int quantitePotion) {
@@ -35,8 +34,7 @@ void Personnage::boirePotionDeVie(int quantitePotion) {
 }
 
 void Personnage::changerArme(std::string nomNouvelleArme, int degatsNouvelleArme) {
-    m_nomArme = nomNouvelleArme;
-    m_degatsArme = degatsNouvelleArme;
+    m_arme.changer(nomNouvelleArme, degatsNouvelleArme);
 }
 
 bool Personnage::estVivant() {
@@ -47,6 +45,6 @@ bool Personnage::estVivant() {
     }
 }
 
-string Personnage::quelleArme() {
-    return m_nomArme;
+void Personnage::quelleArme() {
+    m_arme.afficher();
 }
