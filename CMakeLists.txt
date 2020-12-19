@@ -6,6 +6,7 @@ add_subdirectory(Tableaux)
 add_subdirectory(Pointeur)
 add_subdirectory(Flux)
 add_subdirectory(TP_2_Mot_mystere)
+add_subdirectory(Surcharge_operateurs)
 add_subdirectory(POO)
 
 
