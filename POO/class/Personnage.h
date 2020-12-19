@@ -11,8 +11,7 @@
  */
 #ifndef COURS_PERSONNAGE_H
 #define COURS_PERSONNAGE_H
-#include <string>
-
+#include "Arme.h"
 /*
  * Ne jamais utiliser using namespace std; au début d'un header, fichier .h
  */
@@ -30,13 +29,12 @@ public:
     void boirePotionDeVie(int quantitePotion);
     void changerArme(std::string nomNouvelleArme, int degatsNouvelleArme);
     bool estVivant();
-    std::string quelleArme();
+    void quelleArme();
 
 private:
     int m_vie;
     int m_mana;
-    std::string m_nomArme;
-    int m_degatsArme;
+    Arme m_arme;
 };
 
 
