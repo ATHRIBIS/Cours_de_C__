@@ -24,4 +24,5 @@ int main() {
     goliath.attaquer(david);
     cout << david.quelleArme() << "   "<< goliath.quelleArme();
     return 0;
+    //Surcharge d'opérateur
 }
