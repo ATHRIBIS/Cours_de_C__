@@ -25,6 +25,7 @@ int main() {
     cout << "=" << endl;
     resultat.afficher();
 
+    //Prochaine étape : Les opérateurs de flux
 
     return 0;
 }
