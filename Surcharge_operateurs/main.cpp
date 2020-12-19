@@ -26,6 +26,7 @@ int main() {
     resultat.afficher();
 
     //Prochaine étape : Les opérateurs de flux
+    // 2eme essai
 
     return 0;
 }
