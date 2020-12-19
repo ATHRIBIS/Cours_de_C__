@@ -14,7 +14,7 @@ public:
 
 private:
     std::string m_nom;
-    int degats;
+    int m_degats;
 };
 
 
