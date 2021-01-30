@@ -8,8 +8,8 @@
 
 class Duree {
 public:
-    Duree(int heures = 0, int minutes = 0, int secondes = 0);
-    Duree& operator+=(const Duree &duree2);
+    Duree(int heures = 0, int minutes = 0, int secondes = 0); //constructeur
+    Duree& operator+=(const Duree &duree2); //Prototype de l'opérateur
     void afficher() const;
 
 private:

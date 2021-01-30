@@ -14,14 +14,20 @@ int main() {
      * resultat = duree1 + duree2
      * duree1 et 2 n'étant pas des nombres mais des objets
     */
-    Duree duree1(1,60,28), duree2(0,10,61);
-    Duree resultat;
+    Duree duree1(1,60,28), duree2(0,10,61), duree3(13,34343,434);
+    Duree resultat; //contient le résulat de l'heure
 
     duree1.afficher();
     cout << "+" << endl;
     duree2.afficher();
+    cout << "+" << endl;
+    duree3.afficher();
 
-    resultat = duree1 + duree2;
+    resultat = duree1 + duree2 + duree3;
+    /*
+     * Revient a ecrire :
+     * resultat = operator+(operator(duree1, duree2), duree3);
+     */
     cout << "=" << endl;
     resultat.afficher();
 
