@@ -8,6 +8,8 @@
  * - ON INCLU LE HEADER DE NOTRE CLASS
  */
 #include "Personnage.h"
+#include "Arme.h"
+
 using namespace std;
 Personnage::Personnage(string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nomArme, degatsArme) {
 
