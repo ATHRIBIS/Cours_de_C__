@@ -1,6 +1,7 @@
 //
 // Created by Aymeric Schaeffer on 10/02/2021.
 //
+using namespace std;
 
 #include "ZFraction.h"
 
@@ -20,6 +21,48 @@ ZFraction& ZFraction::operator*=(ZFraction const& b) {
     return *this;
 }
 
+void ZFraction::afficher(ostream &flux) const
+{
+    if (m_den == 1) {
+        flux << m_num;
+    } else if (m_den == 0) {
+        flux << 'X';
+    } else if (m_den == m_num) {
+        flux << 1;
+    } else {
+        flux << m_num << '/' << m_den;
+    }
+}
+
+bool ZFraction::estEgal(const ZFraction &autre) const {
+    if (m_num == autre.m_num && m_den == autre.m_den) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool operator==(ZFraction const &a, ZFraction const &b) {
+    if (a.estEgal(b)) {
+        return true;
+    } else {
+        return false;
+    }
+}bool operator!=(ZFraction const &a, ZFraction const &b) {
+    if (a.estEgal(b)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+ostream& operator<<( ostream &flux, ZFraction const& duree )
+{
+    duree.afficher(flux); //Affichage des attributs
+    return flux;
+}
+
+
 ZFraction operator+(ZFraction const& a, ZFraction const& b) {
     ZFraction c(a); //c est la copie de a pour ne pas modifier a
     c += b; //a (copie) est additionné à b
@@ -31,6 +74,7 @@ ZFraction operator*(ZFraction const& a, ZFraction const& b) {
     c *= b;
     return c;
 }
+
 
 int pgcd(int a, int b) {
     while (b != 0) {

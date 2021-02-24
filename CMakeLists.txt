@@ -10,6 +10,7 @@ add_subdirectory(Surcharge_operateurs)
 add_subdirectory(POO)
 add_subdirectory(Experimentation)
 add_subdirectory(TP_3_ZFraction)
+add_subdirectory(Classes_et_pointeurs)
 
 
 add_executable(Cours main.cpp TP_1_Convertisseur_secondes/maths.cpp TP_1_Convertisseur_secondes/maths.h TP_1_Convertisseur_secondes/TP_1.cpp TP_1_Convertisseur_secondes/convertSeconds.cpp TP_1_Convertisseur_secondes/convertSeconds.h Tableaux/calculMoyenne.cpp Tableaux/calculMoyenne.h Tableaux/calculMoyenneVector.cpp Tableaux/calculMoyenneVector.h)
