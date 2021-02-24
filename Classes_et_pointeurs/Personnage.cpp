@@ -32,3 +32,4 @@ Personnage::~Personnage() {
 void Personnage::estAttaque(Personnage &attaquant) {
     m_vie -= attaquant.m_arme->getMDegats(); //La flèche indique (comme un point .) la propriété d'un pointeur
 }
+//macbookpro
