@@ -13,7 +13,7 @@ public:
     Personnage(std::string nomArme, int degatsArme); //Défini les paramètre d'une arme en meme temps que le personnage
     Personnage(Personnage const& objetReferent); //Constructeur de copie
     ~Personnage();
-    Personnage& operator=(Personnage const& objetReferent);<
+    Personnage& operator=(Personnage const& objetReferent);
 
     void estAttaque(Personnage &attaquant);
 
