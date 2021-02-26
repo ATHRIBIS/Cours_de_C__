@@ -1,3 +1,0 @@
-/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/CMakeFiles/Heritage.dir

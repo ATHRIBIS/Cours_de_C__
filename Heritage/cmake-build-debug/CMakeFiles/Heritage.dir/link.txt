@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Heritage.dir/main.cpp.o CMakeFiles/Heritage.dir/Personnage.cpp.o CMakeFiles/Heritage.dir/Guerrier.cpp.o CMakeFiles/Heritage.dir/Magicien.cpp.o  -o Heritage 
