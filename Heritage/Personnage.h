@@ -10,11 +10,14 @@
 
 class Personnage {
 public:
-    Personnage();
+    Personnage(std::string nom);
+
     void recevoirDegats(int degats);
     void coupDePoing(Personnage &cible);
 
-private:
+    void sePresenter() const;
+
+protected:
     std::string m_nom;
     int m_vie;
 };

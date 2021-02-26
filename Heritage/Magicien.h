@@ -9,10 +9,11 @@
 
 class Magicien : public Personnage {
 public:
-    void enchantementMagique(Personnage &cible);
-    void bouleDeFeu(Personnage &cible);
+    Magicien(std::string nom);
+    void sortSoin();
+    void sePresenter() const;
 
-private:
+protected:
     int m_mana;
 };
 

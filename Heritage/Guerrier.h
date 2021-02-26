@@ -23,7 +23,11 @@
 
 class Guerrier : public Personnage {
 public:
+    Guerrier(std::string nom);
     void coupDeMassueLegendaire(Personnage &cible); //Methode spécifique a la classe Guerrier
+
+protected:
+    int m_energie;
 };
 
 

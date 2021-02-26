@@ -10,4 +10,4 @@ project(Heritage)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Heritage main.cpp Personnage.cpp Personnage.h Guerrier.cpp Guerrier.h Magicien.cpp Magicien.h)
+add_executable(Heritage main.cpp Personnage.cpp Personnage.h Guerrier.cpp Guerrier.h Magicien.cpp Magicien.h MagicienNoir.cpp MagicienNoir.h MagicienBlanc.cpp MagicienBlanc.h)
