@@ -48,6 +48,10 @@ Personnage& Personnage::operator=(Personnage const& objetReferent) {
 }
 //Cela permet de faire nouveauPersonnageA = personnageCopiéB
 //A ne pas confondre avec le constructeur de copie
+/*
+ * IMPORTANT : cet surcharge d'opérateur= va de pair avec le constructeur de copie, ainsi, les deux sont necessairement
+ * lié, et doivent être déclarés tous les deux.
+ */
 
 
 void Personnage::estAttaque(Personnage &attaquant) {
