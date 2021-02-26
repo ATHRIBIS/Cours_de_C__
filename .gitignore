@@ -1,2 +1,5 @@
 /cmake-build-debug/
 .idea
+/Heritage/cmake-build-debug/
+/Heritage/cmake-build-debug/*
+
