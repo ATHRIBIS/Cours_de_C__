@@ -3,4 +3,13 @@
 //
 
 #include "Magicien.h"
-//Personnage::void enchantementMagique(Personnage &cible);
+
+
+void Magicien::bouleDeFeu(Personnage &cible) {
+    cible.recevoirDegats(10);
+}
+
+
+void Magicien::enchantementMagique(Personnage &cible) {
+    cible.recevoirDegats(5);
+}

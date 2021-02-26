@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Heritage"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Heritage">
+				<Option output="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Heritage" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heritage"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Heritage/fast">
+				<Option output="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Heritage" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 Heritage/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Guerrier.cpp">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Guerrier.h">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Magicien.cpp">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Magicien.h">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Personnage.cpp">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/Personnage.h">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/main.cpp">
+			<Option target="Heritage"/>
+		</Unit>
+		<Unit filename="/Users/aymericschaeffer/CLionProjects/Cours_de_C__/Heritage/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

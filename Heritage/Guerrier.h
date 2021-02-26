@@ -23,7 +23,7 @@
 
 class Guerrier : public Personnage {
 public:
-    void coupDeMassueLegendaire(); //Methode spécifique a la classe Guerrier
+    void coupDeMassueLegendaire(Personnage &cible); //Methode spécifique a la classe Guerrier
 };
 
 

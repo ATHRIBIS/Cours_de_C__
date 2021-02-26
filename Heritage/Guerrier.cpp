@@ -3,3 +3,8 @@
 //
 
 #include "Guerrier.h"
+
+
+void Guerrier::coupDeMassueLegendaire(Personnage &cible) {
+    cible.recevoirDegats(15);
+}
