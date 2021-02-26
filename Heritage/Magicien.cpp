@@ -15,7 +15,6 @@ void Magicien::sortSoin() {
 
 
 void Magicien::sePresenter() const {
-    std::cout << "Je m'appel " << m_nom << "." << std::endl;
-    std::cout << "J'ai " << m_vie << " points de vie." << std::endl;
-    std::cout << "Je me présente avec la fonction de présentation de la classe Magicien\n" << std::endl;
+    Personnage::sePresenter();
+    std::cout << "Je me présente avec la fonction de présentation de la classe Magicien" << std::endl;
 }

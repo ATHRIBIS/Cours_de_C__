@@ -17,5 +17,5 @@ void Personnage::coupDePoing(Personnage &cible) {
 }
 void Personnage::sePresenter() const {
     cout << "Je m'appel " << m_nom << "." << endl;
-    cout << "J'ai " << m_vie << " points de vie.\n" << endl;
+    cout << "J'ai " << m_vie << " points de vie." << endl;
 }
