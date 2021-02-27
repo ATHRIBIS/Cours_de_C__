@@ -4,6 +4,7 @@
 using namespace std;
 
 #include <iostream>
+#include <vector>
 #include "Vehicules.h"
 
 void presenter(Vehicule const& v) { //On ajoute constante pour de l'affichage (a titre indicatif)
@@ -34,7 +35,7 @@ int main() {
      *
      * On aurait pu faire :
      */
-    Vehicule *v1(0), *v2(0);
+    Vehicule *v1(nullptr), *v2(nullptr);
     v1 = new Vehicule;
     v2 = new Moto;
 
@@ -62,6 +63,38 @@ int main() {
      *
      * UN DESTRUCTEUR EST TOUJOURS VIRTUEL SI ON UTILISE LE POLYMORPHISME
      */
+
+    //------------------------------------------------------------------------------------------------------------------
+    //TP Garagistes - Collections hétérogènes
+    //------------------------------------------------------------------------------------------------------------------
+
+    std::vector<Vehicule*> listeVehicules; //On créé un vector dynamique
+    //Colletion hétérogène
+
+    listeVehicules.push_back(new Voiture(15000, 5));
+    listeVehicules.push_back(new Voiture(10000, 3));
+    //On ajoute a la collection une voiture avec les parametres choisis
+    listeVehicules.push_back(new Moto(4000, 90));
+    //On ajoute une moto et deux voitures
+
+    /*
+     * On va afficher des informations sur nos véhicules
+     */
+
+    for(auto & listeVehicule : listeVehicules) {
+        listeVehicule->affiche();
+        cout << endl;
+    }
+
+    /*
+     * On va maintenant librer la mémoire :
+     */
+
+    for(auto & listeVehicule : listeVehicules) {
+        delete listeVehicule; //On libère la mémoire
+        listeVehicule = nullptr; //On reset les adresses des pointeurs
+        cout << listeVehicule << endl;
+    }
 
     return 0;
 }
