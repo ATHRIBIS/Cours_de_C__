@@ -6,7 +6,10 @@ using namespace std;
 #include <iostream>
 #include "Vehicules.h"
 
-void presenter(Vehicule v) {
+void presenter(Vehicule const& v) { //On ajoute constante pour de l'affichage (a titre indicatif)
+    /*
+     * On appel une référence (ou pointeur) du Vehicule pour la fonction virtuelle (résolution dynamique de lien)
+     */
     v.affiche();
 }
 

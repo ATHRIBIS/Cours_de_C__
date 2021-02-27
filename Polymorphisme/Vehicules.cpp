@@ -15,3 +15,7 @@ void Voiture::affiche() const {
 void Moto::affiche() const {
     std::cout << "Ceci est une Moto" << std::endl;
 }
+
+/*
+ * On ne précise pas de fonction virtuelle dans le fichier source !!!
+ */
