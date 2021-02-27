@@ -41,5 +41,27 @@ int main() {
     v1->affiche();
     v2->affiche();
 
+
+    /*
+     * Voyons maintentant le cas du destructeur en polymorphisme :
+     * (un constructeur lui ne peut pas être virtuel, cela n'a pas de sens
+     * car on sait déja quest ce qu'on créé lors de la création de l'objet)
+     */
+    Vehicule *myV(0); //On créé un pointeur vide vers une adresse Vehicule
+    myV = new Voiture; //On le fait pointer vers un objet de type Voiture (que l'on créer)
+    //On créé un objet Voiture et on met son addresse dans un pointeur de Vehicule
+    //-> Méthode virtuelle
+
+    myV->affiche(); //On affiche la présentation
+
+    delete myV; //On désalloue la mémoire, détruit la voiture
+    /*
+     * On problème réside dans delete myV;
+     * delte n'est pas une fonction virtuelle
+     * delete va donc utiliser la méthode de Vehicule et non de Voiture !!
+     *
+     * IL FAUT RENDRE LE DESTRUCTEUR VIRTUEL POUR FAIRE UN APPEL VERS LE BON DESTRUCTEUR !!!
+     */
+
     return 0;
 }
