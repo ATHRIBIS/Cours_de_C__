@@ -4,17 +4,40 @@
 
 #include "Vehicules.h"
 
+/*
+ * Définition de la classe Vehicule
+ */
+
 void Vehicule::affiche() const {
     std::cout << "Ceci est un Véhicule" << std::endl;
 }
+
+Vehicule::Vehicule(int prix) : m_prix(prix) {}
+
+Vehicule::~Vehicule() noexcept {}
+
+/*
+ * Définition de la classe Voiture
+ */
 
 void Voiture::affiche() const {
     std::cout << "Ceci est une Voiture" << std::endl;
 }
 
+Voiture::Voiture(int prix, int portes) : Vehicule(prix), m_portes(portes) {}
+
+Voiture::~Voiture() noexcept {}
+/*
+ * Définition de la classe Moto
+ */
+
 void Moto::affiche() const {
     std::cout << "Ceci est une Moto" << std::endl;
 }
+
+Moto::Moto(int prix, int vitesse) : Vehicule(prix), m_vitesse(vitesse) {}
+
+Moto::~Moto() noexcept {}
 
 /*
  * On ne précise pas de fonction virtuelle dans le fichier source !!!

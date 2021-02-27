@@ -10,11 +10,9 @@
 
 class Vehicule {
 public:
+    Vehicule(int prix = 10);
+    virtual ~Vehicule(); //On remarque ici le terme virtual
     virtual void affiche() const;
-    /*
-     * le mot-clef virtual est indiqué dans le header .h UNIQUEMENT
-     * pas de le fichier source .cpp
-     */
 
 protected:
     int m_prix;
@@ -23,11 +21,9 @@ protected:
 
 class Moto : public Vehicule {
 public:
+    Moto(int prix = 5, int vitesse = 90);
+    virtual ~Moto();
     virtual void affiche() const;
-    /*
-     * En théorie, les classe filles sont déja virtuelle par héritage
-     * On peut préciser virtual pour mieux s'y retrouver
-     */
 
 private:
     double m_vitesse;
@@ -36,10 +32,9 @@ private:
 
 class Voiture : public Vehicule {
 public:
+    Voiture(int prix = 10, int portes = 4);
+    virtual ~Voiture();
     virtual void affiche() const;
-    /*
-     * Idem ici que l28-29
-     */
 
 private:
     int m_portes;
