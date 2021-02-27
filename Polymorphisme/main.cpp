@@ -30,8 +30,16 @@ int main() {
     /*
      * La résolution dynamique nécessite deux ingrédients :
      * - utiliser un pointeur ou référence
-     * - utiliser des méthodes virtuelles
+     * - utiliser des méthodes virtuelles -> fonctions virtuelles
+     *
+     * On aurait pu faire :
      */
+    Vehicule *v1(0), *v2(0);
+    v1 = new Vehicule;
+    v2 = new Moto;
+
+    v1->affiche();
+    v2->affiche();
 
     return 0;
 }
