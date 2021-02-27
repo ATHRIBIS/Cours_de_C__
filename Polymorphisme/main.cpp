@@ -60,7 +60,7 @@ int main() {
      * delte n'est pas une fonction virtuelle
      * delete va donc utiliser la méthode de Vehicule et non de Voiture !!
      *
-     * IL FAUT RENDRE LE DESTRUCTEUR VIRTUEL POUR FAIRE UN APPEL VERS LE BON DESTRUCTEUR !!!
+     * UN DESTRUCTEUR EST TOUJOURS VIRTUEL SI ON UTILISE LE POLYMORPHISME
      */
 
     return 0;
