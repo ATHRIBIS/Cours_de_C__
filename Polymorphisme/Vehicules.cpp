@@ -14,7 +14,7 @@ void Vehicule::affiche() const {
 
 Vehicule::Vehicule(int prix) : m_prix(prix) {}
 
-Vehicule::~Vehicule() noexcept {}
+Vehicule::~Vehicule() noexcept = default;
 
 /*
  * Définition de la classe Voiture
@@ -26,7 +26,7 @@ void Voiture::affiche() const {
 
 Voiture::Voiture(int prix, int portes) : Vehicule(prix), m_portes(portes) {}
 
-Voiture::~Voiture() noexcept {}
+Voiture::~Voiture() noexcept = default;
 /*
  * Définition de la classe Moto
  */
@@ -37,7 +37,20 @@ void Moto::affiche() const {
 
 Moto::Moto(int prix, int vitesse) : Vehicule(prix), m_vitesse(vitesse) {}
 
-Moto::~Moto() noexcept {}
+Moto::~Moto() noexcept = default;
+
+/*
+ * Définition de la classe Moto
+ */
+
+void Camion::affiche() const {
+    std::cout << "Ceci est un Camion pesant " << m_poids << " tonnes, au prix de " << m_prix << " euros." << std::endl;
+}
+
+Camion::Camion(int prix, double poids) : Vehicule(prix), m_poids(poids) {}
+
+Camion::~Camion() noexcept = default;
+
 
 /*
  * On ne précise pas de fonction virtuelle dans le fichier source !!!

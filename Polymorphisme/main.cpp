@@ -35,7 +35,8 @@ int main() {
      *
      * On aurait pu faire :
      */
-    Vehicule *v1(nullptr), *v2(nullptr);
+    Vehicule *v2(nullptr);
+    Vehicule *v1(nullptr);
     v1 = new Vehicule;
     v2 = new Moto;
 
@@ -48,7 +49,7 @@ int main() {
      * (un constructeur lui ne peut pas être virtuel, cela n'a pas de sens
      * car on sait déja quest ce qu'on créé lors de la création de l'objet)
      */
-    Vehicule *myV(0); //On créé un pointeur vide vers une adresse Vehicule
+    Vehicule *myV(nullptr); //On créé un pointeur vide vers une adresse Vehicule
     myV = new Voiture; //On le fait pointer vers un objet de type Voiture (que l'on créer)
     //On créé un objet Voiture et on met son addresse dans un pointeur de Vehicule
     //-> Méthode virtuelle
