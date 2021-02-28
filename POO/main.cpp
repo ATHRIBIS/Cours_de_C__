@@ -14,7 +14,10 @@
 using namespace std;
 int main() {
     // Nouveau constructeur
-    Personnage david("E", 1), goliath("E", 1);
+    Personnage david("E", 1);
+    Personnage goliath("E", 1);
+
+    goliath.attaquer(david);
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
     goliath.attaquer(david);
@@ -24,6 +27,7 @@ int main() {
     goliath.attaquer(david);
     david.quelleArme();
     goliath.quelleArme();
+
     return 0;
     //Surcharge d'opérateur
 }

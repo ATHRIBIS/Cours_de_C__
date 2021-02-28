@@ -10,18 +10,19 @@
 
 class Vehicule {
 public:
-    explicit Vehicule(int prix = 10);
+    explicit Vehicule(int matricul, int prix = 10);
     virtual ~Vehicule(); //On remarque ici le terme virtual
     virtual void affiche() const;
 
 protected:
     int m_prix;
+    int m_matricul;
 };
 
 
 class Moto : public Vehicule {
 public:
-    explicit Moto(int prix = 5, int vitesse = 90);
+    explicit Moto(int matricul, int prix = 5, int vitesse = 90);
     ~Moto() override;
     void affiche() const override;
 
@@ -32,7 +33,7 @@ private:
 
 class Voiture : public Vehicule {
 public:
-    explicit Voiture(int prix = 10, int portes = 4);
+    explicit Voiture(int matricul, int prix = 10, int portes = 4);
     ~Voiture() override;
     void affiche() const override;
 
@@ -43,7 +44,7 @@ private:
 
 class Camion : public Vehicule {
 public:
-    explicit Camion(int prix = 10000, double poids = 3.5);
+    explicit Camion(int matricul, int prix = 10000, double poids = 3.5);
     ~Camion() override;
     void affiche() const override;
 
