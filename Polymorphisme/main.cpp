@@ -98,6 +98,12 @@ int main() {
         cout << listeVehicule << endl;
     }
 */
-    Garage::ajouterVehicule(9090, 90);;
+    //Garage::ajouterVehicule(9090, 90); //NON FONCTIONNEL
     return 0;
+
+    /*
+     * Classes abstrraites
+     */
+
+
 }
